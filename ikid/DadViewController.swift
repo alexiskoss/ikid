@@ -10,6 +10,26 @@ import UIKit
 
 class DadViewController: UIViewController {
 
+    @IBOutlet weak var dadLabel: UILabel!
+    @IBOutlet weak var dadButton: UIButton!
+    var dadFlip: Bool = false
+    var dadJoke: String = "How do penguins build their house?"
+    var dadAnswer: String = "Igloos it together."
+    
+    @IBAction func dadAnswer(_ sender: UIButton) {
+        if(!dadFlip) {
+            UIView.transition(with: self.view, duration: 0.40, options: UIViewAnimationOptions.transitionFlipFromLeft, animations: nil, completion: nil)
+            dadLabel.text = dadAnswer
+            dadButton.setTitle("Back", for: .normal)
+            dadFlip = true
+        } else {
+            UIView.transition(with: self.view, duration: 0.40, options: UIViewAnimationOptions.transitionFlipFromRight, animations: nil, completion: nil)
+            dadLabel.text = dadJoke
+            dadButton.setTitle("Answer", for: .normal)
+            dadFlip = false
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,16 +40,5 @@ class DadViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
