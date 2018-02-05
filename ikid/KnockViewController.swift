@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  FirstViewController.swift
 //  ikid
 //
 //  Created by Alexis Koss on 2/4/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class KnockViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
