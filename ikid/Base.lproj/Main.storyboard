@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,17 +15,17 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="KnockViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Knock! Knock!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bx-SA-jti">
-                                <rect key="frame" x="132" y="298.5" width="111" height="21"/>
+                                <rect key="frame" x="151.66666666666666" y="333" width="110.99999999999997" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwe-xz-sua">
-                                <rect key="frame" x="304" y="568" width="51" height="30"/>
+                                <rect key="frame" x="343" y="637" width="51" height="30"/>
                                 <state key="normal" title="Answer"/>
                                 <connections>
                                     <action selector="knockAnswer:" destination="9pv-A4-QxB" eventType="touchUpInside" id="mA3-QM-s2h"/>
@@ -34,11 +34,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="bwe-xz-sua" secondAttribute="trailing" constant="20" id="7Di-3c-d9G"/>
-                            <constraint firstItem="0bx-SA-jti" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Dzr-q5-glb"/>
-                            <constraint firstItem="0bx-SA-jti" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="cRM-cc-b5X"/>
-                            <constraint firstItem="bwe-xz-sua" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="304" id="nJD-n4-owF"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="bwe-xz-sua" secondAttribute="bottom" constant="20" id="pTD-zU-X2L"/>
+                            <constraint firstItem="0bx-SA-jti" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="7rI-Ws-Dik"/>
+                            <constraint firstItem="bwe-xz-sua" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tsR-hK-woN" secondAttribute="leading" constant="20" symbolic="YES" id="FZS-Su-0iC"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="bwe-xz-sua" secondAttribute="bottom" constant="20" id="SGy-h1-8lU"/>
+                            <constraint firstItem="0bx-SA-jti" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="X0r-RK-ds4"/>
+                            <constraint firstAttribute="trailing" secondItem="bwe-xz-sua" secondAttribute="trailing" constant="20" id="z92-23-2UX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
@@ -60,17 +60,20 @@
             <objects>
                 <viewController storyboardIdentifier="PunFirst" id="8rJ-Kc-sve" customClass="PunViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you call birds that stick together?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJc-7y-BAw">
-                                <rect key="frame" x="25.5" y="323" width="324" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you call birds that stick together?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJc-7y-BAw">
+                                <rect key="frame" x="62" y="359" width="290.33333333333331" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDL-UU-KSG">
-                                <rect key="frame" x="304" y="568" width="51" height="30"/>
+                                <rect key="frame" x="343" y="637" width="51" height="30"/>
                                 <state key="normal" title="Answer"/>
                                 <connections>
                                     <action selector="punAnswer:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="guz-Mr-GwG"/>
@@ -79,11 +82,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="bDL-UU-KSG" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="304" id="ONM-Ib-NwE"/>
-                            <constraint firstItem="cJc-7y-BAw" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="Sw3-An-Xab"/>
-                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="bDL-UU-KSG" secondAttribute="bottom" constant="20" id="lHc-aV-BMl"/>
-                            <constraint firstItem="cJc-7y-BAw" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="ooh-H3-x6V"/>
-                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="bDL-UU-KSG" secondAttribute="trailing" constant="20" id="rAT-qp-fHL"/>
+                            <constraint firstItem="cJc-7y-BAw" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="8tc-aw-7Yc"/>
+                            <constraint firstItem="bDL-UU-KSG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="20" symbolic="YES" id="M5m-k9-29P"/>
+                            <constraint firstItem="cJc-7y-BAw" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="RUT-rB-G08"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="bDL-UU-KSG" secondAttribute="bottom" constant="20" id="Ytb-o9-sj2"/>
+                            <constraint firstAttribute="trailing" secondItem="bDL-UU-KSG" secondAttribute="trailing" constant="20" id="nrs-pv-P8A"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
@@ -96,24 +99,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="793" y="0.0"/>
+            <point key="canvasLocation" x="791.20000000000005" y="0.0"/>
         </scene>
         <!--Dad-->
         <scene sceneID="m8K-Ot-d1B">
             <objects>
                 <viewController id="jDU-cu-6jA" customClass="DadViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lYo-fg-tgI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do penguins build their house?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3SF-6k-EKl">
-                                <rect key="frame" x="50.5" y="323" width="274" height="21"/>
+                                <rect key="frame" x="70" y="357.66666666666669" width="274" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KE8-Rx-yaw">
-                                <rect key="frame" x="304" y="568" width="51" height="30"/>
+                                <rect key="frame" x="343" y="637" width="51" height="30"/>
                                 <state key="normal" title="Answer"/>
                                 <connections>
                                     <action selector="dadAnswer:" destination="jDU-cu-6jA" eventType="touchUpInside" id="4Sj-xP-HD1"/>
@@ -122,11 +125,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="3SF-6k-EKl" firstAttribute="centerY" secondItem="lYo-fg-tgI" secondAttribute="centerY" id="1VO-AG-9nq"/>
-                            <constraint firstItem="vA7-3J-BYb" firstAttribute="bottom" secondItem="KE8-Rx-yaw" secondAttribute="bottom" constant="20" id="Hr1-zz-nXj"/>
-                            <constraint firstItem="vA7-3J-BYb" firstAttribute="trailing" secondItem="KE8-Rx-yaw" secondAttribute="trailing" constant="20" id="Oxc-Z0-9vw"/>
-                            <constraint firstItem="3SF-6k-EKl" firstAttribute="centerX" secondItem="lYo-fg-tgI" secondAttribute="centerX" id="fiK-jA-ntt"/>
-                            <constraint firstItem="KE8-Rx-yaw" firstAttribute="leading" secondItem="vA7-3J-BYb" secondAttribute="leading" constant="304" id="pcG-a8-L0Y"/>
+                            <constraint firstItem="vA7-3J-BYb" firstAttribute="bottom" secondItem="KE8-Rx-yaw" secondAttribute="bottom" constant="20" id="4gj-6f-BhY"/>
+                            <constraint firstItem="KE8-Rx-yaw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lYo-fg-tgI" secondAttribute="leading" constant="20" symbolic="YES" id="8u6-uL-tGV"/>
+                            <constraint firstItem="3SF-6k-EKl" firstAttribute="centerY" secondItem="lYo-fg-tgI" secondAttribute="centerY" id="HVk-TZ-FEE"/>
+                            <constraint firstItem="3SF-6k-EKl" firstAttribute="centerX" secondItem="lYo-fg-tgI" secondAttribute="centerX" id="KkV-j5-E1S"/>
+                            <constraint firstAttribute="trailing" secondItem="KE8-Rx-yaw" secondAttribute="trailing" constant="20" id="cPo-8N-Mcu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vA7-3J-BYb"/>
                     </view>
